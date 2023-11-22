@@ -1,0 +1,29 @@
+service: ha-on-echo-show
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+# plugins:
+#   - serverless-esbuild
+
+# package:
+#   patterns:
+#     - 'documents/**'
+
+# custom:
+#   esbuild:
+#     platform: 'node'
+#     format: 'esm'
+#     outputFileExtension: .mjs
+#     exclude:
+#       - '@aws-sdk/*'
+
+functions:
+  ha-assistant-skill:
+    handler: index.handler
+    environment:
+      HA_ENDPOINT: ${ssm:/ha-assistant-skill/ha-endpoint}
+    events:
+      - alexaSkill: ${ssm:/ha-assistant-skill/id}
