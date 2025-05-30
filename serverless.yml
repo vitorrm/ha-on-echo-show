@@ -25,5 +25,6 @@ functions:
     handler: index.handler
     environment:
       HA_ENDPOINT: ${ssm:/ha-assistant-skill/ha-endpoint}
+      CAMERA_ENDPOINT: ${ssm:/ha-assistant-skill/camera-endpoint}
     events:
       - alexaSkill: ${ssm:/ha-assistant-skill/id}

@@ -14,7 +14,8 @@ export const OpenPageIntentHandler = {
 
 		return openURL(
 			handlerInput.responseBuilder,
-			`${process.env.HA_ENDPOINT}/lovelace/default_view`,
+			`${process.env.CAMERA_ENDPOINT}`,
+			// `${process.env.HA_ENDPOINT}/lovelace/default_view`,
 		).getResponse()
 	},
 }
