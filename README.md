@@ -13,6 +13,7 @@ Both the Lambda backend (`serverless.yml`) and the Alexa skill configuration (`s
 - **Invocation name**: `meu assistente` (`pt-BR`)
 - **Open default dashboard**: *"Alexa, abrir meu assistente"* -> opens `$HA_ENDPOINT/lovelace/default_view`
 - **Open camera / page view** (`OpenPageIntent`): *"abrir console"*, *"abrir {page}"*, *"abrir console {page}"* -> opens `$CAMERA_ENDPOINT`
+- **Open recipes view** (`OpenRecipesIntent`): *"abrir receitas"*, *"abrir receita"*, *"receitas"*, *"mostrar receitas"* -> opens `$HA_ENDPOINT/lovelace/receitas`
 
 Built-in intents (`Cancel`, `Help`, `Stop`, `NavigateHome`, `Fallback`) are also supported. See [pt-BR.json](skill-package/interactionModels/custom/pt-BR.json) for the full interaction model.
 

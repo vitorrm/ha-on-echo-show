@@ -2,6 +2,7 @@
 import { LaunchRequestHandler } from './src/intents/launchRequestHandler.js'
 import { HelpIntentHandler } from './src/intents/helpIntentHandler.js'
 import { OpenPageIntentHandler } from './src/intents/openPageIntentHandler.js'
+import { OpenRecipesIntentHandler } from './src/intents/openRecipesIntentHandler.js'
 import { CancelAndStopIntentHandler } from './src/intents/cancelAndStopIntentHandler.js'
 import { FallbackIntentHandler } from './src/intents/fallbackIntentHandler.js'
 import { SessionEndedRequestHandler } from './src/sessionEndedRequestHandler.js'
@@ -16,6 +17,7 @@ const skill = Alexa.SkillBuilders.custom()
 	.addRequestHandlers(
 		LaunchRequestHandler,
 		OpenPageIntentHandler,
+		OpenRecipesIntentHandler,
 		HelpIntentHandler,
 		CancelAndStopIntentHandler,
 		SessionEndedRequestHandler,

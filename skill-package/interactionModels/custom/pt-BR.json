@@ -35,6 +35,15 @@
 						"abrir console",
 						"abrir console {page}"
 					]
+				},
+				{
+					"name": "OpenRecipesIntent",
+					"samples": [
+						"abrir receitas",
+						"abrir receita",
+						"receitas",
+						"mostrar receitas"
+					]
 				}
 			],
 			"types": [],
